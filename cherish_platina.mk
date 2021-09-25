@@ -24,6 +24,7 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from platina device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+CHERISH_BUILD_TYPE := OFFICIAL
 WITH_GMS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
