@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2019 The CherishOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,19 +19,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cherish stuff
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from platina device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+WITH_GMS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_PIXEL_CHARGER := true
+CHERISH_BUILD_VARIANT := Gapps
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := platina
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_platina
+PRODUCT_NAME := cherish_platina
 PRODUCT_MODEL := MI 8 Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=heynanairo&BMW
 
 TARGET_VENDOR_PRODUCT_NAME := platina
 

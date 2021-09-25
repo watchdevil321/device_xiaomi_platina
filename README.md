@@ -27,7 +27,7 @@ The Xiaomi Mi 8 Lite (codenamed _"platina"_) is a mid-range smartphone from Xiao
 
 ```
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The CherishOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
