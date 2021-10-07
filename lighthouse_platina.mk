@@ -28,7 +28,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Lighthouse stuff
 WITH_GAPPS := true
-LIGHTHOUSE_BUILD_TYPE := UNOFFICIAL
+LIGHTHOUSE_BUILD_TYPE := OFFICIAL
 
 # Inherit from platina device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
