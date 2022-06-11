@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_platina.mk
+    $(LOCAL_DIR)/corvus_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_platina-user \
-    cherish_platina-userdebug \
-    cherish_platina-eng
+    corvus_platina-user \
+    corvus_platina-userdebug \
+    corvus_platina-eng
